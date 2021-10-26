@@ -1,66 +1,92 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Fale Conosco - SALUS-GROUP</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
-    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-</head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>Fale Conosco - SALUS-GROUP</title>
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+        <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    </head>
 
-<body>
-    <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="mainNav">
-        <div class="container"><a class="navbar-brand" href="index.html">SALUS-GROUP</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
-            <div
-                class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="post.html">Informações COVID-19</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="quem.html">Quem Somos</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="contact.html">Fale Conosco</a></li>
-                </ul>
-        </div>
-        </div>
-    </nav>
-    <header class="masthead" style="background-image:url('assets/img/covid-bg.jpg');">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-10 col-lg-8 mx-auto">
-                    <div class="site-heading">
-                        <h1>Fale Conosco</h1><span class="subheading"></span></div>
-                </div>
-            </div>
-        </div>
-    </header>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-10 col-lg-8 mx-auto">
-                
-            </div>
-        </div>
-    </div>
-    <hr>
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-10 col-lg-8 mx-auto">
-                    <ul class="list-inline text-center">
-                        <li class="list-inline-item"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></li>
-                        <li class="list-inline-item"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></li>
-                        <li class="list-inline-item"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-github fa-stack-1x fa-inverse"></i></span></li>
+    <body>
+        <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="mainNav">
+            <div class="container"><a class="navbar-brand" href="index.html">SALUS-GROUP</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+                <div
+                    class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="post.html">Informações COVID-19</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="quem.html">Quem Somos</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="contact.html">Fale Conosco</a></li>
                     </ul>
-                    <p class="text-muted copyright">Copyright&nbsp;©&nbsp;SALUS-GROUP 2021</p>
+                </div>
+            </div>
+        </nav>
+        <header class="masthead" style="background-image:url('assets/img/covid-bg.jpg');">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-lg-8 mx-auto">
+                        <div class="site-heading">
+                            <h1>Fale Conosco</h1><span class="subheading"></span></div>
+                        <form action="contact.html" method="POST" style="background-color: white; padding: 0px 10px"> 
+                            <input type="hidden" name="recipient" value="testeiseuemail@gmail.com"> <!-- Pode ser qualquer endereço de email -->
+                            <input type="hidden" name="redirect" value="contact.html"> <!-- Após o envio, o usuário será redirecionado para a página configurada aqui -->
+                            <input type="hidden" name="subject" value="assunto">  <!-- Assunto da mensagem -->
+                            <input type="hidden" name="email" value="email@doseudominio">   <!-- Deve ser uma conta de email ativa em seu domínio -->
+
+                            <p> 
+                                Nome:<br /> 
+                                <input type="text" size="30" name="nome"> 
+                            </p>   
+
+                            <p>
+                                E-mail:<br /> 
+                                <input type="text" size="30" name="replyto"> 
+                            </p>   
+
+                            <p> 
+                                Mensagem:<br /> 
+                                <input type="text" size="35" name="Comentarios"> 
+                            </p>   
+
+                            <p> 
+                                <input type="submit" name="BTEnvia" value="Enviar"> 
+                                <input type="reset" name="BTApaga" value="Apagar"> <br><br></p> 
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-lg-8 mx-auto">
+
                 </div>
             </div>
         </div>
-    </footer>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/script.min.js"></script>
-</body>
+        <hr>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-lg-8 mx-auto">
+                        <ul class="list-inline text-center">
+                            <li class="list-inline-item"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></li>
+                            <li class="list-inline-item"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></li>
+                            <li class="list-inline-item"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-github fa-stack-1x fa-inverse"></i></span></li>
+                        </ul>
+                        <p class="text-muted copyright">Copyright&nbsp;©&nbsp;SALUS-GROUP 2021</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/script.min.js"></script>
+    </body>
 
 </html>
